@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<audio id="track" controls>
+	  <source src="audio/audiotest.mp3" type="audio/mpeg">
+	  <source src="audio/audiotest.ogg" type="audio/ogg">
+	</audio> 
+
+	<script type="text/javascript">
+		var audio = document.getElementById('track');
+		audio.addEventListener('timeupdate',function(){
+		    var currentTimeMs = audio.currentTime;
+		    console.log(currentTimeMs);
+		},false);
+	</script>
+</body>
+</html>
