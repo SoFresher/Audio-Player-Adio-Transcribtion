@@ -1,23 +1,61 @@
-{ 
-  "highlight1": {
-    "durations": [
-      {"id":1,"start":"0","end":"2.6089"},
-      {"id":2,"start":"2.609","end":"5.2301"},
-      {"id":3,"start":"5.2942","end":"6.97"},
-      {"id":4,"start":"7.024","end":"8.3227"},
-      {"id":5,"start":"8.394","end":"10.1666"},
-    ],
-    "link": "https://raw.githubusercontent.com/SoFresher/Audio-Player-Adio-Transcribtion/master/audio/audiotest.mp3"
-  },
+{
+	"highlight1": {
+		"durations": [{
+				"id": 1,
+				"start": "0",
+				"end": "2.6089"
+			},
+			{
+				"id": 2,
+				"start": "2.609",
+				"end": "5.2301"
+			},
+			{
+				"id": 3,
+				"start": "5.2942",
+				"end": "6.97"
+			},
+			{
+				"id": 4,
+				"start": "7.024",
+				"end": "8.3227"
+			},
+			{
+				"id": 5,
+				"start": "8.394",
+				"end": "10.1666"
+			}
+		],
+		"link": "https://raw.githubusercontent.com/SoFresher/Audio-Player-Adio-Transcribtion/master/audio/audiotest.mp3"
+	},
 
-  "highlight1": {
-    "durations": [
-      {"id":1,"start":"0","end":"2.6089"},
-      {"id":2,"start":"2.609","end":"5.2301"},
-      {"id":3,"start":"5.2942","end":"6.97"},
-      {"id":4,"start":"7.024","end":"8.3227"},
-      {"id":5,"start":"8.394","end":"10.1666"},
-    ],
-    "link": "https://raw.githubusercontent.com/SoFresher/Audio-Player-Adio-Transcribtion/master/audio/audiotest.mp3"
-  }
+	"highlight2": {
+		"durations": [{
+				"id": 1,
+				"start": "0",
+				"end": "2.6089"
+			},
+			{
+				"id": 2,
+				"start": "2.609",
+				"end": "5.2301"
+			},
+			{
+				"id": 3,
+				"start": "5.2942",
+				"end": "6.97"
+			},
+			{
+				"id": 4,
+				"start": "7.024",
+				"end": "8.3227"
+			},
+			{
+				"id": 5,
+				"start": "8.394",
+				"end": "10.1666"
+			}
+		],
+		"link": "https://raw.githubusercontent.com/SoFresher/Audio-Player-Adio-Transcribtion/master/audio/audiotest.mp3"
+	}
 }
