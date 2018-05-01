@@ -2,20 +2,20 @@
   "highlight1": {
     "durations": [{
         "id": 1,
-        "start": "0",
-        "end": "2.6089",
+        "start": 0,
+        "end": 2.6089,
         "chunk": "The beauty of those beautiful beards you are growing,"
       },
       {
         "id": 2,
-        "start": "2.609",
-        "end": "5.2301",
+        "start": 2.609,
+        "end": 5.2301,
         "chunk": "the nice hijav you are wearing,"
       },
       {
         "id": 3,
-        "start": "5.2942",
-        "end": "6.97",
+        "start": 5.2942,
+        "end": 6.97,
         "chunk": "it is when you are shy."
       },
       {
@@ -26,8 +26,8 @@
       },
       {
         "id": 5,
-        "start": "8.394",
-        "end": "10.1666",
+        "start": 8.394,
+        "end": 10.1666,
         "chunk": "a sister with hijab"
       }
     ],
@@ -37,20 +37,20 @@
   "highlight2": {
     "durations": [{
         "id": 1,
-        "start": "0",
-        "end": "2.6089",
+        "start": 0,
+        "end": 2.6089,
         "chunk": "The beauty of those beautiful beards you are growing,"
       },
       {
         "id": 2,
-        "start": "2.609",
-        "end": "5.2301",
+        "start": 2.609,
+        "end": 5.2301,
         "chunk": "the nice hijav you are wearing,"
       },
       {
         "id": 3,
-        "start": "5.2942",
-        "end": "6.97",
+        "start": 5.2942,
+        "end": 6.97,
         "chunk": "it is when you are shy."
       },
       {
@@ -61,8 +61,8 @@
       },
       {
         "id": 5,
-        "start": "8.394",
-        "end": "10.1666",
+        "start": 8.394,
+        "end": 10.1666,
         "chunk": "a sister with hijab"
       }
     ],
