@@ -20,8 +20,8 @@
       },
       {
         "id": 4,
-        "start": "7.024",
-        "end": "8.3227",
+        "start": 7.024,
+        "end": 8.3227,
         "chunk": "Can you imagine!"
       },
       {
@@ -34,7 +34,7 @@
     "link": "https://raw.githubusercontent.com/SoFresher/Audio-Player-Adio-Transcribtion/master/audio/audiotest.mp3"
   },
 
-  "highlight2": {
+ "highlight2": {
     "durations": [{
         "id": 1,
         "start": 0,
@@ -55,8 +55,8 @@
       },
       {
         "id": 4,
-        "start": "7.024",
-        "end": "8.3227",
+        "start": 7.024,
+        "end": 8.3227,
         "chunk": "Can you imagine!"
       },
       {
