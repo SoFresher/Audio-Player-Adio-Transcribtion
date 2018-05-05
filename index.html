@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Adio Read Along</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <link rel="stylesheet" href="assets/bs/css/bootstrap.min.css">
+        <script src="assets/scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/bs/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1 align="center">Audio breakdown </h1><br>
+        <div class="container body">
+            <section class="col-md-12" id="alert">
+                <div class="alert alert-danger alert-dismissible fade in" role="alerat">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+                    </button> 
+                    <strong>The resource </strong>you are looking for is currently not available, Contact the Administrators. 
+                </div>
+            </section>
+
+            <section class="col-md-7 col-sm-7 col-xs-12">
+                <p class="loading">
+                    <em><img src="assets/loader.gif" alt="Initializing audio"> Loading audio…</em>
+                </p>
+
+                <p class="passage-audio" hidden id="audio">
+                    <audio id="passage-audio" class="passage" controls>
+                        <source src="audio/audiotest.mp3" type="audio/mp3" id="mp3">
+                        <source src="audio/audiotest.ogg" type="audio/ogg">
+                        <source src="audio/audiotest.wav" type="audio/wav">
+                        <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                    </audio>
+                </p>
+
+                <p class="passage-audio-unavailable" hidden>
+                    <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+                </p>
+
+                <p class="playback-rate-unavailable" hidden>
+                    <!-- <em>(It seems your browser does not support <code>HTMLMediaElement.playbackRate</code>, so you will not be able to change the speech rate.)</em> -->
+                </p>
+                <p class="autofocus-current-word" hidden>
+                    <input type="checkbox" id="autofocus-current-word" checked>
+                    <label for="autofocus-current-word" style="color: #ece5e5;">Auto-focus/auto-scroll</label>
+                </p>
+
+                <div id="passage-text" class="passage">           
+                    <p id = "texts">
+                        <label class="note" style="color: #fd0b0be8;"><b>Note:</b></label><br>
+                        <span data-dur="20" data-begin="0" id="popoverData" class="" data-content="Space bar will automatically pause and play audio" data-trigger="hover" rel="popover" data-placement="bottom" style="color: #ece5e5;">
+                            Kindly pause and play to determine start point and end point of a chunk
+                        </span>
+                    </p>
+                </div>
+
+                <div>
+                    <textarea id="logresults" style="height: 200px; width: 300px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif" class="form-control">
+                    </textarea><br>
+                    <button onclick="savese()" id="download" class="form-control btn btn-primary" style="width: 150px; color: #fff !Important">
+                        Download as csv
+                    </button>
+                </div>
+            </section>
+
+            <section class="col-md-5 col-sm-5 col-xs-12">
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <span style="color: #ffa74f;">Instruction</span>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body panel-content">
+                            <span style="color: red;">Kindly read the following instructions carefully, before playing the audio</span>
+                            <ul><b>Below are a sections that contain the audio transcript</b>
+                                <li>Read through the audio transcript</li>
+                                <li>Break the transcript into chunks</li>
+                                <li>Download the file as csv</li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Step 1: <span style="color: #ffa74f;">Audio Transcript</span>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body panel-content">
+                            <span style="color: red; margin-bottom: 10px;">
+                                Read through the audio transcript as said in earlier section
+                            </span>
+                            <textarea class="form-control" rows="5" readonly="true" id="transcript">
+                            </textarea>
+                            <span style="color: red; margin-top: 10px;">Go to step 2 to break text into chunks.</span>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Step 2: <span style="color: #ffa74f;">Download CSV</span>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body panel-content">
+                            <span style="color: red; margin-bottom: 10px;">
+                                Break text into chunks  and download as described in the Instruction section.
+                            </span>
+                            <textarea class="form-control" id="chunks" style="" rows="7">
+                            </textarea><br>
+
+                            <button onclick="saveaschunk()" id="downasch" class="form-control btn btn-primary" style="width: 150px; color: #fff !Important">
+                                Download as csv
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <h3 style="border-top: 0px;">Transcript</h3> -->
+            </section>
+        </div>
+
+        <script type="text/javascript">
+            // console.log(document.getElementById('logresults').value)
+            // function saveaschunk() {
+
+            //     var a = document.createElement('a');
+            //     with (a) {
+            //         href='data:text/csv;base64,' + btoa(document.getElementById('transcript').value);
+            //         download='csvfile.csv';
+            //     }
+            //     document.body.appendChild(a);
+            //     a.click();
+            //     document.body.removeChild(a);
+            // }
+            // function savese() {
+            //     var a = document.createElement('a');
+            //     with (a) {
+            //         href='data:text/xsls;base64,' + btoa(document.getElementById('logresults').value);
+            //         download='csvfile.csv';
+            //     }
+            //     document.body.appendChild(a);
+            //     a.click();
+            //     document.body.removeChild(a);
+            // }
+        </script>
+        <script src="assets/scripts/read-along.js"></script>
+        <script src="assets/scripts/main.js"></script>
+        <script src="assets/scripts/getCsv.js"></script>
+        <script src="assets/scripts/highlight.js"></script>
+        <script src="assets/scripts/popover.js"></script>
+    </body>
+</html>

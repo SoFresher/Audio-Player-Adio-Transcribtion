@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Demo</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="assets/style.css">
+        <script src="assets/scripts/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Audio player and audio transcription </h1>
+        <article>
+
+            <p class="loading">
+                <em><img src="assets/loader.gif" alt="Initializing audio"> Loading audio…</em>
+            </p>
+
+            <p class="passage-audio" hidden>
+                <audio id="passage-audio" class="passage" controls>
+                    <source src="audio/audiotest.mp3" id="mp3">
+                    <source src="audio/audiotest.ogg" type="audio/ogg">
+                    <source src="audio/audiotest.wav" type="audio/wav">
+                    <em class="error"><strong>Error:</strong> Your browser doesn't appear to support HTML5 Audio.</em>
+                </audio>
+            </p>
+
+            <p class="passage-audio-unavailable" hidden>
+                <em class="error"><strong>Error:</strong> You will not be able to do the read-along audio because your browser is not able to play MP3, Ogg, or WAV audio formats.</em>
+            </p>
+
+            <p class="playback-rate-unavailable" hidden>
+               <!--  <em>(It seems your browser does not support <code>HTMLMediaElement.playbackRate</code>, so you will not be able to change the speech rate.)</em> -->
+            </p>
+            <p class="autofocus-current-word" hidden>
+                <input type="checkbox" id="autofocus-current-word" checked>
+                <label for="autofocus-current-word">Auto-focus/auto-scroll</label>
+            </p>
+
+            <div id="passage-text" class="passage">           
+                <p id = "texts">
+                    
+                </p>
+            </div>
+        </article>
+        <script type="text/javascript">
+            
+        </script>
+
+        <script src="assets/scripts/transcript.js"></script>
+        <script src="assets/scripts/main.js"></script>
+        <script src="assets/scripts/read-along.js"></script>
+    </body>
+</html>
