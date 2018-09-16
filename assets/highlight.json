@@ -4,61 +4,61 @@
         "id": 1,
         "start": 0,
         "end": 2.6089,
-        "chunk": "The beauty of those beautiful beards you are growing,"
+        "chunk": "The beauty of those beautiful beards you are growing, "
       },
       {
         "id": 2,
         "start": 2.609,
         "end": 5.2301,
-        "chunk": "the nice hijav you are wearing,"
+        "chunk": "the nice hijab you are wearing, "
       },
       {
         "id": 3,
         "start": 5.2942,
         "end": 6.97,
-        "chunk": "it is when you are shy."
+        "chunk": "it is when you are shy. "
       },
       {
         "id": 4,
         "start": 7.024,
         "end": 8.3227,
-        "chunk": "Can you imagine!"
+        "chunk": "Can you imagine! "
       },
       {
         "id": 5,
         "start": 8.394,
         "end": 10.1666,
-        "chunk": "a sister with hijab"
+        "chunk": "a sister with hijab "
       },
       {
         "id": 6,
         "start": 10.1667,
         "end": 11.9025,
-        "chunk": "dancing on street,"
+        "chunk": "dancing on street, "
       },
       {
         "id": 7,
         "start": 11.9026,
         "end": 14.3707,
-        "chunk": "there is a street jams in the society"
+        "chunk": "there is a street jams in the society "
       },
       {
         "id": 8,
         "start": 14.3707,
         "end": 16.2107,
-        "chunk": "and she is there dancing"
+        "chunk": "and she is there dancing "
       },
       {
         "id": 9,
         "start": 16.2107,
         "end": 18.7603,
-        "chunk": "publicly to people to see"
+        "chunk": "publicly to people to see "
       },
       {
         "id": 10,
         "start": 18.7604,
         "end": 20.1927,
-        "chunk": "Subhanallah!"
+        "chunk": "Subhanallah! "
       }
     ],
     "link": "https://raw.githubusercontent.com/SoFresher/Audio-Player-Adio-Transcribtion/master/audio/audiotest.mp3"
